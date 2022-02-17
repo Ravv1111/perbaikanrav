@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Diri</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="#">Data Diri</a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="tentang.html">tentang</a></li>
+                <li><a href="kontak.html">kontak</a></li>
+                
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container2">
+        <div class="content">
+            
+        </div>
+    </div>
+
+
+    <div class="container">
+    <div class="sejarah">
+        <div class="gallery">
+
+            
+            </figure>
+
+        </div>
+        <div class="content">
+            <div class="title">Riwayat Pendidikan</div>
+            <div class="pencapaian">
+            <ul class="listinjrsn">
+                <li class="list-in-jurusan-pagee">SDIT Permata Bunda (2021-2018)</li>
+                </li>
+                <li class="list-in-jurusan-pagee">SMP Khalifah Boarding School (2018-2021)</li>
+                <li class="list-in-jurusan-pagee">SMK Wikrama (2021--sekarang)</li>
+            </ul>    
+                            </div>
+                            <footer class="footer-main">
+                                <div class="footer-grid">
+                                <section class="footer-1">
+                                   
+                                    <ul class="links">
+    
+                                       
+                               
+                                    </ul>
+                                  </section>
+                                 <section class="footer-2">
+                                    
+                                  
+                                 </section>
+                                 <section class="footer-4">
+                                   
+                                      
+                                    </ul>
+                                  </section>
+                                </div>
+                                </footer>
+                            <script>
+                                const body = document.querySelector("body");
+                                const navbar = document.querySelector(".navbar");
+                                const menuBtn = document.querySelector(".menu-btn");
+                                const cancelBtn = document.querySelector(".cancel-btn");
+                                menuBtn.onclick = ()=>{
+                                    navbar.classList.add("show");
+                                    menuBtn.classList.add("hide");
+                                    body.classList.add("disabled");
+                                }
+                                cancelBtn.onclick = ()=>{
+                                    navbar.classList.remove("show");
+                                    menuBtn.classList.remove("hide");
+                                    body.classList.remove("disabled");
+                                }
+                        
+                                window.onscroll = ()=>{
+                                    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+                                }
+                            </script>
+
+    </script>
+</body>
